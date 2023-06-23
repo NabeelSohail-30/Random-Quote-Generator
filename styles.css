@@ -1,0 +1,51 @@
+body {
+  background-size: cover;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  background-color: #1D2D50;
+}
+
+.quote-box {
+  width: 70%;
+  margin: 200px auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  font-size: 4em;
+  text-align: center;
+}
+
+.source {
+  border: 2px solid white;
+  width: fit-content;
+  padding: 16px;
+  align-self: end;
+  margin: 50px 0px;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.btn {
+  background-color: #1D2D50;
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.5em;
+  align-self: center;
+  margin: 0px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #1D2D50;
+  cursor: pointer;
+  font-weight: bold !important;
+}
