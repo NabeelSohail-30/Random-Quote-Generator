@@ -423,6 +423,32 @@ var quotes = [
 	}
 ];
 
+const darkBlueShades = [
+	'#121B26',
+	'#15232D',
+	'#1A2E39',
+	'#1F3943',
+	'#24444E',
+	'#295058',
+	'#2D5B63',
+	'#32666D',
+	'#377177',
+	'#3C7C82'
+];
+
+function getRandomColor() {
+	var randomNumber = Math.floor(Math.random() * (darkBlueShades.length));
+	var randomColor = darkBlueShades[randomNumber];
+	return randomColor;
+}
+
+function changeBackgroundColor(backgroundColor) {
+	document.body.style.backgroundColor = backgroundColor;
+}
+
+function changeButtonColor(buttonColor) {
+	document.getElementById("loadQuote").style.backgroundColor = buttonColor;
+}
 
 function getRandomQuote() {
 	var randomNumber = Math.floor(Math.random() * (quotes.length));
@@ -431,6 +457,9 @@ function getRandomQuote() {
 }
 
 function printQuote() {
+	var randomColor = getRandomColor();
+	changeBackgroundColor(randomColor);
+	changeButtonColor(randomColor);
 	var quotes = getRandomQuote();
 	let quoteDiv = document.querySelector('.quote');
 	let sourceDiv = document.querySelector('.source');
